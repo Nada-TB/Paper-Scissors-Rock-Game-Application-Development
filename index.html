@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/scissors.jpg" type="image/x-icon">
+    <title>Paper scissors rock game</title>
+</head>
+<body>
+    <header>
+        <h1>Paper scissors rock game</h1>
+        <h2>Let's play a paper scissors rock game with a computer! Click on the card of your choice and get your score &#128515;</h2>
+    </header>
+    <main>
+        <section >
+            <p id="result"></p>
+                
+        </section>
+        <section id='score' >
+            <table >
+                <th>computer Score</th>
+                <th>player score</th>
+                <tr>
+                    <td id="computerScore"></td>
+                    <td id="playerScore"></td>
+                </tr>
+            </table>
+        </section>
+        <section id="player" >
+            <div class="logo">
+                <img src="images/player.png" alt="player" >
+            </div>
+            <img src="images/rock.jpg" alt="rock">
+            <img src="images/paper.jpg" alt="paper">
+            <img src="images/scissors.jpg" alt="scissors">      
+        </section>
+
+        <section id="computer">
+            <div class="logo">
+                <img src="images/computer.png" alt="computer">  
+            </div>
+            <img  id="computerChoice" src="" alt="">
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy 2020 Nada TEBBA. All rights reserved</p>
+    </footer>
+    <script src="class_card.js"></script>
+   <script src="app.js"></script> 
+</body>
+</html>

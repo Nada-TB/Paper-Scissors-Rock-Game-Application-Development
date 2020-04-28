@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 64.5%;
+}
+
+h1{
+    text-align: center;
+    color: purple;
+    font-size: 4rem;
+
+}
+
+h2{
+    text-align: center;
+}
+
+main{
+    max-width: 100%;
+    margin: 50px auto; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#player, #computer{
+    width:100%;
+    margin: 20px;
+}
+
+.logo {
+    width:100px; 
+    padding:5px;
+    margin-right: 5px;
+    display: inline-block;
+    border:2px solid blueviolet;
+    border-radius: 20px 5px;
+    position: relative;
+    text-align: center;
+    background-color:#ffccff;
+    box-shadow: 3px -5px 4px #cce6ff;
+}
+
+.logo img{
+    box-shadow: none;
+}
+
+.logo::after {
+    content:" ";
+    border-style: solid;
+    border-color: blueviolet transparent transparent;
+    border-width: 10px;
+    position: absolute;
+    right:-20px;
+    top:35px;
+    transform: rotate(-90deg);
+}
+
+img{
+    width:55px;
+    height: 80px;
+    margin:2.5px ;
+    border-radius: 8px;
+    box-shadow: 3px -5px 4px  #cce6ff;
+    transition: transform 1s;
+}
+
+#result{
+    text-align:center;
+    font-size: 1.3rem;
+    border: 2px solid blueviolet;
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 20px 5px;
+    box-shadow: 3px -5px 4px  #cce6ff;
+    text-transform: capitalize;
+    display: none;
+}
+
+ table, tr, td, th{
+    border: 2px solid blueviolet;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#score{
+    max-width: 60%;
+    margin: 10px auto;
+    display: none;
+    
+}
+
+footer p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+@media only screen and (min-width: 600px){
+    img{
+        width: 100px;
+        height: 120px;
+        margin: 10px;
+    }
+    .logo{
+        width:120px;
+    }
+
+    #player, #computer{
+        margin:30px ;
+    }
+
+    main{
+        max-width: 80%;
+        font-size: 1.8rem;
+    }
+    #result{
+        font-size: 1.8rem;
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+        main{
+            max-width: 60%;
+        }
+        #result{
+            width:20%;
+            position: fixed;
+            right:50px;
+            top:25%;
+        }
+        #score{
+            position: fixed;
+            right:50px;
+            top:35%;
+        }
+       
+}
